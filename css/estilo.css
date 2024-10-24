@@ -154,7 +154,7 @@ header{
 }
 
 /*tela de notebook*/
-@media screen and (max-width: 1600px) and (min-width: 426px){
+@media screen and (max-width: 1600px) and (min-width: 451px){
     .epsWrap, .text{
         margin-left: 4%;
     }
@@ -212,7 +212,7 @@ header{
 }
 
 /*tela de celular*/
-@media screen and (max-width: 425px){
+@media screen and (max-width: 450px){
     header{
         height: 40px;
     }
