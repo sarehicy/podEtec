@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="img/Logo.png">
+    </head>
+
+    <body>
+        <header>
+            <p class="indice" onclick="openNav()">≡</p>
+
+            <img class="logo" src="img/Logo.png" alt="Podcast etec">
+
+            <div class="pages">
+                <a href="index.html"><p>Início</p></a>
+                <a href="episodios.html"><p>Episódios</p></a>
+                <a href="contato.html"><p>Contatos</p></a>
+                <p>Tema</p>
+            </div>
+        </header>
+
+        <div class="navCelular none" id="nav">
+            <a href="index.html"><p>Início</p></a>
+            <a href="episodios.html"><p>Episódios</p></a>
+            <a href="contato.html"><p>Contatos</p></a>
+            <p>Tema</p>
+        </div>
+        <div class="shadow none" id="shadow"></div>
+        
+       
+            <div class="main">
+                <h1 class="title">Contatos</h1>
+                <p class="text">   Entre em contato conosco por meio das nossas redes sociais</p>
+                <main>
+                    <section class="project-description">
+                        <p class="text">  Estamos ansiosos para ouvir de você! Se você tiver dúvidas, sugestões ou feedback sobre nossos episódios ou qualquer outro aspecto do nosso podcast, não hesite em nos contatar. Sua opinião é muito importante para nós e nos ajuda a melhorar a qualidade do conteúdo que oferecemos.
+            
+                            Preencha o formulário abaixo com seu nome, e-mail e mensagem, e nossa equipe entrará em contato o mais rápido possível. Agradecemos por fazer parte da nossa comunidade e por contribuir para o nosso crescimento!
+                            
+                            </p>
+                    </section>
+             <!----  parte de email comeca aqui  ----!-->
+                    <form action="mailto:portaldeestudos2024@gmail.com" method="post" enctype="text/plain" onsubmit="return validarFormulario()">
+                        <div class="contato">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        
+                            <label for="mensagem">Mensagem:</label>
+                            <input id="mensagem" name="mensagem" required>
+                            
+                        
+                            <button class="botao" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+
+
+        <script src="javascript/script.js"></script>
+    </body>
+
+
+
+    </html>

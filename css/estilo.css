@@ -1,0 +1,300 @@
+/*declarando todas as fontes externas*/
+@font-face {
+    font-family: Telegraf;
+    src: url(fonts/PPTelegraf-UltraBold.otf);
+}
+@font-face {
+    font-family: TelegrafRegular;
+    src: url(fonts/PPTelegraf-Regular.otf);
+}
+
+@font-face{
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: #b81111;
+    font-family: TelegrafRegular;
+}
+
+body{
+    margin: 0;
+    background-color: #001430;
+    font-family: Poppins;
+}
+.none{
+    display: none;
+}
+
+header{
+    background-color: #b81111;
+    width: 100%;
+    display: flex; /*deixa os botões lado a lado*/
+}
+
+.redes{
+    background-color: #b81111;
+    position: relative;
+    
+}
+.links{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+.pages{ /*conjunto de botões no canto superior direito*/
+    display: flex; /*deixa os botões lado a lado*/
+
+    margin-left: auto;  /*alinhar elementos à direita*/
+    margin-right: 2%;
+
+    font-family: Telegraf;
+    gap: 15px;
+}
+
+.banner{
+    width: 100%;
+}
+#siteName{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.eps{
+    background-color: #ffefef;
+    display: inline-block;
+
+    transition-duration: 150ms;
+}
+.epCover{
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+.epTitle{
+    align-self: center;
+
+    color: #b81111;
+    font-family: Telegraf;
+    text-align: center;
+}
+.eps:hover{
+    transform: scale(1.02);
+}
+
+/*tela de pc*/
+@media screen and (min-width: 1601px) {
+    .epsWrap, .text{
+        margin-left: 4%;
+    }
+    header{
+        height: 50px;
+        font-size: 18px;
+    }
+    .indice, .navCelular{
+        display: none;
+    }
+
+    .banner{
+        background-size: 100%;
+
+        height: 500px;
+    }
+    #siteName{
+        width: 450px;
+        
+    }
+    .main{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 40px;
+        margin-bottom: 15%;
+    }
+    .text{
+        font-size: 19px;
+    }
+    .eps{
+        height: 270px;
+        width: 200px;
+        border-radius: 10px;
+
+        box-sizing: border-box;
+        padding: 1%;
+        margin-right: 2%;
+    }
+    .epTitle{
+        font-size: 18px;
+    }
+
+    .title{
+        font-size: 49px;
+    }
+
+
+    .redes{
+        height: 50px;
+    }
+    .links img{
+        width: 30px;
+        margin-left: 2%;
+    }
+    
+    
+}
+
+/*tela de notebook*/
+@media screen and (max-width: 1600px) and (min-width: 426px){
+    .epsWrap, .text{
+        margin-left: 4%;
+    }
+
+    header{
+        height: 50px;
+    }
+
+    .indice, .navCelular{
+        display: none;
+    }
+
+    .banner{
+        background-size: cover;
+        background-position: center;
+        height: 410px;
+    }
+    #siteName{
+        width: 450px;
+        
+    }
+    .main{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 40px;
+        margin-bottom: 15%;
+    }
+    .text{
+        font-size: 15px;
+        margin-bottom: 7%;
+    }
+
+
+    .eps{
+        height: 280px;
+        width: 200px;
+        border-radius: 10px;
+
+        box-sizing: border-box;
+        padding: 1%;
+        margin-right: 2%;
+    }
+    .epTitle{
+        font-size: 18px;
+    }
+
+
+    .redes{
+        height: 50px;
+    }
+    .links img{
+        width: 30px;
+        margin-left: 2%;
+    }    
+}
+
+/*tela de celular*/
+@media screen and (max-width: 425px){
+    header{
+        height: 40px;
+    }
+    .logo{
+        width: 70px;
+        margin: auto;
+    }
+    .indice{
+        margin: 0;
+        color: black;
+        font-size: 30px;
+        position: absolute;
+        top: -0.60%;
+        left: 2%;
+    }
+
+    .navCelular{
+        position: absolute;
+        z-index: 3;
+
+        background-color: #001430;
+
+        height: 100%;
+        width: 50%;
+
+        font-family: Telegraf;
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+    .shadow{
+        position: absolute;
+        z-index: 2;
+
+        width: 100%;
+        height: 105%;
+
+        background-color: rgba(0, 0, 0, 0.425);
+    }
+
+    .pages{
+        display: none;
+    }
+    .banner{
+        background-size: cover;
+        background-position: center;
+        height: 380px;
+    }
+    #siteName{
+        width: 97%;
+    }
+    .main{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 40px;
+        margin-bottom: 35%;
+    }
+    .text{
+        font-size: 15px;
+        margin-bottom: 23%;
+    }
+    
+    .eps{
+        display: block;
+        min-height: fit-content;
+        width: 85%;
+        border-radius: 10px;
+
+        box-sizing: border-box;
+        padding: 5%;
+
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    .epTitle{
+        font-size: 18px;
+    }
+
+    .redes{
+        height: 100px;
+    }
+    .links img{
+        width: 30px;
+        margin-left: 5%;
+    }    
+}
